@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cost: 9.99
+  created_at: 2012-11-12 14:07:16
+
+two:
+  cost: 9.99
+  created_at: 2012-11-12 14:07:16

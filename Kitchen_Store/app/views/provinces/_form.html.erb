@@ -1,0 +1,45 @@
+<%= form_for(@province) do |f| %>
+  <% if @province.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@province.errors.count, "error") %> prohibited this province from being saved:</h2>
+
+      <ul>
+      <% @province.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :pstRate %><br />
+    <%= f.text_field :pstRate %>
+  </div>
+  <div class="field">
+    <%= f.label :gstRate %><br />
+    <%= f.text_field :gstRate %>
+  </div>
+  <div class="field">
+    <%= f.label :hstRate %><br />
+    <%= f.text_field :hstRate %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_days %><br />
+    <%= f.number_field :shipping_days %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_surcharge %><br />
+    <%= f.number_field :shipping_surcharge %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

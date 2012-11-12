@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  pstRate: 9.99
+  gstRate: 9.99
+  hstRate: 9.99
+  shipping_days: 1
+  shipping_surcharge: 1
+  created_at: 2012-11-12 13:55:27
+
+two:
+  name: MyString
+  pstRate: 9.99
+  gstRate: 9.99
+  hstRate: 9.99
+  shipping_days: 1
+  shipping_surcharge: 1
+  created_at: 2012-11-12 13:55:27

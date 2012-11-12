@@ -1,0 +1,29 @@
+<h1>Listing supplier_orders</h1>
+
+<table>
+  <tr>
+    <th>Quantity</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th>Received</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @supplier_orders.each do |supplier_order| %>
+  <tr>
+    <td><%= supplier_order.quantity %></td>
+    <td><%= supplier_order.created_at %></td>
+    <td><%= supplier_order.updated_at %></td>
+    <td><%= supplier_order.received %></td>
+    <td><%= link_to 'Show', supplier_order %></td>
+    <td><%= link_to 'Edit', edit_supplier_order_path(supplier_order) %></td>
+    <td><%= link_to 'Destroy', supplier_order, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Supplier order', new_supplier_order_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@supplier_order) do |f| %>
+  <% if @supplier_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@supplier_order.errors.count, "error") %> prohibited this supplier_order from being saved:</h2>
+
+      <ul>
+      <% @supplier_order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br />
+    <%= f.datetime_select :updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :received %><br />
+    <%= f.check_box :received %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

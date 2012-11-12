@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fname:</b>
+  <%= @customer.fName %>
+</p>
+
+<p>
+  <b>Lname:</b>
+  <%= @customer.lName %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @customer.city %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @customer.address %>
+</p>
+
+<p>
+  <b>Postalcode:</b>
+  <%= @customer.postalCode %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @customer.created_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

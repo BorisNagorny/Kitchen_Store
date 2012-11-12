@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  quantity: 1
+  created_at: 2012-11-12 14:08:55
+  updated_at: 2012-11-12 14:08:55
+  received: false
+
+two:
+  quantity: 1
+  created_at: 2012-11-12 14:08:55
+  updated_at: 2012-11-12 14:08:55
+  received: false

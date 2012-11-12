@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @supplier_order.quantity %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @supplier_order.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @supplier_order.updated_at %>
+</p>
+
+<p>
+  <b>Received:</b>
+  <%= @supplier_order.received %>
+</p>
+
+
+<%= link_to 'Edit', edit_supplier_order_path(@supplier_order) %> |
+<%= link_to 'Back', supplier_orders_path %>

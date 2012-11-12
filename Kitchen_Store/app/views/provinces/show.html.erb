@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @province.name %>
+</p>
+
+<p>
+  <b>Pstrate:</b>
+  <%= @province.pstRate %>
+</p>
+
+<p>
+  <b>Gstrate:</b>
+  <%= @province.gstRate %>
+</p>
+
+<p>
+  <b>Hstrate:</b>
+  <%= @province.hstRate %>
+</p>
+
+<p>
+  <b>Shipping days:</b>
+  <%= @province.shipping_days %>
+</p>
+
+<p>
+  <b>Shipping surcharge:</b>
+  <%= @province.shipping_surcharge %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @province.created_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_province_path(@province) %> |
+<%= link_to 'Back', provinces_path %>
